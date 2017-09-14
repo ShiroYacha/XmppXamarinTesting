@@ -11,7 +11,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "XmppXamarinTest.iOS", "Xmpp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sharp.Xmpp", "..\..\Sharp.Xmpp\Sharp.Xmpp.csproj", "{9EA99E39-8C5C-4F69-9F3F-8E3074C518FA}"
 EndProject
+Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "SharedXmppLib", "SharedXmppLib\SharedXmppLib.shproj", "{22ACCAC3-4358-4798-AC9E-CE05C52A4F54}"
+EndProject
 Global
+	GlobalSection(SharedMSBuildProjectFiles) = preSolution
+		SharedXmppLib\SharedXmppLib.projitems*{22accac3-4358-4798-ac9e-ce05c52a4f54}*SharedItemsImports = 13
+		SharedXmppLib\SharedXmppLib.projitems*{5534e8fe-c981-4e96-8455-e2989ad5975e}*SharedItemsImports = 4
+		SharedXmppLib\SharedXmppLib.projitems*{a7343208-60de-427c-ad59-108dc5a00118}*SharedItemsImports = 4
+	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
