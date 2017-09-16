@@ -4,8 +4,33 @@
              xmlns:local="clr-namespace:XmppXamarinTest"
              x:Class="XmppXamarinTest.MainPage">
 
-	<Label Text="Welcome to Xamarin Forms!" 
-           VerticalOptions="Center" 
-           HorizontalOptions="Center" />
+    <Grid>
+        <StackLayout>
+            
+            <!--Status-->
+            <StackLayout Orientation="Horizontal">
+                <ActivityIndicator Color="Accent" BackgroundColor="#aaffffff" IsRunning="{Binding IsBusyRunning}" IsVisible="{Binding IsBusyRunning}"/>
+                <Label Text="{Binding Availability}" VerticalOptions="Center" FontAttributes="Bold"/>
+                <Button Clicked="RunButton_OnClicked" Text="Run" IsEnabled="{Binding IsNotBusyRunning}"/>
+                <Button Clicked="StopButton_OnClicked" Text="Stop" IsEnabled="{Binding IsNotBusyRunning}"/>
+            </StackLayout>
+            
+            <!--Roaster-->
+            <StackLayout>
+                <ListView ItemsSource="{Binding }">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <ViewCell>
+                                <StackLayout Orientation="Horizontal">
+                                    <Label Text="{Binding Jid}" VerticalOptions="Center"></Label>
+                                </StackLayout>
+                            </ViewCell>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+            </StackLayout>
+        </StackLayout>
+
+    </Grid>
 
 </ContentPage>

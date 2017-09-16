@@ -9,6 +9,6 @@
     <Import_RootNamespace>SharedXmppLib</Import_RootNamespace>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="$(MSBuildThisFileDirectory)Test.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)XmppManager.cs" />
   </ItemGroup>
 </Project>
